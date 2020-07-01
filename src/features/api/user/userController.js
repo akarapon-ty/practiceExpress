@@ -11,7 +11,7 @@ export const registerController = async (req, res) => {
         repeatPassword: body.repeatPassword,
     }
     const { error } = await register(input)
-     console.log('test')
+
     if (error) return res.status(400).send(error)
 
     return res.status(200).send('register complete')
