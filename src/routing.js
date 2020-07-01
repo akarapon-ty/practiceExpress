@@ -1,8 +1,8 @@
 import express from 'express'
-import routerLogin from './routers/router-login'
+import userRouter from './routers/userRouter'
 
 const routing = express.Router()
 
-routing.use(routerLogin)
+routing.use(userRouter)
 
 export default routing
